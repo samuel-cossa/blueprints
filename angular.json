@@ -85,6 +85,7 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
+              "src/_redirects",
               {
                 "glob": "**/*",
                 "input": "public"
@@ -98,5 +99,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "6d945aea-d795-4360-92cb-4c97bcac38af"
   }
 }
