@@ -1,0 +1,48 @@
+:host {
+  .section-header {
+    margin-bottom: 60px;
+    position: relative;
+    padding-bottom: 20px;
+    h2 {
+      font-size: 36px;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #9195a2;
+    }
+  }
+
+  .section-header::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 5px;
+    background: linear-gradient(
+      to right,
+      oklch(51.01% 0.274 263.83) 0%,
+      oklch(53.18% 0.28 296.97) 40%,
+      oklch(47.66% 0.246 305.88) 50%,
+      oklch(69.02% 0.277 332.77) 70%,
+      oklch(61.42% 0.238 15.34) 85%,
+      oklch(63.32% 0.24 31.68) 100%
+    );
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: transparent;
+    bottom: 0;
+    left: calc(50% - 30px);
+  }
+
+  .section-with-bg {
+    background-color: #f6f7fd;
+  }
+}

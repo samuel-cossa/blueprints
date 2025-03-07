@@ -30,7 +30,17 @@
       font-weight: 600;
 
       a {
-        color: var(--color-links);
+        background: linear-gradient(
+          to right,
+          oklch(51.01% 0.274 263.83) 0%,
+          oklch(53.18% 0.28 296.97) 40%,
+          oklch(47.66% 0.246 305.88) 50%,
+          oklch(69.02% 0.277 332.77) 70%,
+          oklch(61.42% 0.238 15.34) 85%,
+          oklch(63.32% 0.24 31.68) 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
 
@@ -40,10 +50,6 @@
       a {
         transition: 0.5s;
         font-size: 18px;
-      }
-
-      a:hover {
-        color: #f82249;
       }
     }
   }
@@ -126,6 +132,9 @@
       bottom: 0;
       transition: 0.5s;
       z-index: 9997;
+      .active {
+        font-weight: 700;
+      }
       ul {
         position: absolute;
         inset: 0;
@@ -142,7 +151,7 @@
           font-size: 18px;
           text-transform: uppercase;
           letter-spacing: 1px;
-          font-weight: 700 !important;
+          font-weight: 100 !important;
           white-space: nowrap;
           transition: 0.3s;
         }

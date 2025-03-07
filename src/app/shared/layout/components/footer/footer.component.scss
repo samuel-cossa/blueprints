@@ -2,7 +2,9 @@
   footer {
     margin-top: 60px;
     padding: 0px;
-
+    ul > li > a {
+      color: currentColor !important;
+    }
     .social-links a {
       display: flex;
       align-items: center;
@@ -15,6 +17,14 @@
       margin-right: 10px;
       transition: 0.3s;
       color: inherit;
+    }
+
+    .links {
+      i {
+        line-height: 0;
+        padding-right: 5px;
+        font-size: 18px;
+      }
     }
 
     .content {
